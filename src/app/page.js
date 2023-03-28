@@ -50,7 +50,7 @@ export default function Home() {
     <main className="bg-white overflow-hidden flex items-center justify-center antialiased">
       <div className="flex flex-col w-full max-w-[1920px] z-10 gap-32 relative">
         <Image
-          src={require("./assets/colorblur.png")}
+          src="/assets/colorblur.png"
           alt="color-blur"
           width={741}
           height={523}
@@ -82,8 +82,10 @@ export default function Home() {
                 {/* Search Box */}
                 <div className="flex items-center p-1 pl-6 gap-4 w-full rounded-[32px] border-[#E0E3EB] border">
                   <Image
-                    src={require("./assets/location.png")}
+                    src="/assets/location.png"
                     alt="location"
+                    width={24}
+                    height={24}
                   />
                   <input
                     className="font-medium leading-5 text-sm text-[#888B97] grow outline-none bg-transparent"
@@ -92,7 +94,12 @@ export default function Home() {
                   />
                   <button className="bg-[#10B981] rounded-[32px] px-4 py-3 text-white gap-1 items-center flex justify-center">
                     Search{" "}
-                    <Image src={require("./assets/arrow-right.png")} alt="" />
+                    <Image
+                      src="/assets/arrow-right.png"
+                      alt=""
+                      width={8}
+                      height={10}
+                    />
                   </button>
                 </div>
 
@@ -102,12 +109,33 @@ export default function Home() {
                     Our Partnership
                   </span>
                   <div className="flex gap-8 items-center">
-                    <Image src={require("./assets/travoka.png")} alt="logo" />
-                    <Image src={require("./assets/tiket.png")} alt="logo" />
-                    <Image src={require("./assets/airbnb.png")} alt="logo" />
                     <Image
-                      src={require("./assets/tripadvisor.png")}
+                      src="/assets/travoka.png"
                       alt="logo"
+                      width={82.75}
+                      height={64}
+                      objectFit="cover"
+                    />
+                    <Image
+                      src="/assets/tiket.png"
+                      alt="logo"
+                      objectFit="cover"
+                      width={82.75}
+                      height={64}
+                    />
+                    <Image
+                      src="/assets/airbnb.png"
+                      alt="logo"
+                      objectFit="cover"
+                      width={82.75}
+                      height={64}
+                    />
+                    <Image
+                      src="/assets/tripadvisor.png"
+                      alt="logo"
+                      objectFit="cover"
+                      width={82.75}
+                      height={64}
                     />
                   </div>
                 </div>
@@ -115,25 +143,34 @@ export default function Home() {
             </div>
 
             <div className="flex absolute right-0 top-0 -z-10">
-              <Image src={require("./assets/houseimg.png")} alt="house" />
+              <Image
+                src="/assets/houseimg.png"
+                alt="house"
+                objectFit="cover"
+                width={720}
+                height={720}
+              />
               <div className="flex gap-4 absolute bottom-0 m-11 overflow-hidden w-[859px]">
                 <div className="flex bg-white p-6 rounded-[32px] items-center gap-4">
                   <div className="flex -space-x-7">
                     <Image
-                      src={require("./assets/user-1.png")}
+                      src="/assets/user-1.png"
                       width={56}
+                      height={56}
                       className="rounded-full border-white border-[3px]"
                       alt=""
                     />
                     <Image
-                      src={require("./assets/user-2.png")}
+                      src="/assets/user-2.png"
                       width={56}
+                      height={56}
                       className="rounded-full border-white border-[3px]"
                       alt=""
                     />
                     <Image
-                      src={require("./assets/user-3.png")}
+                      src="/assets/user-3.png"
                       width={56}
+                      height={56}
                       className="rounded-full border-white border-[3px]"
                       alt=""
                     />
@@ -148,9 +185,12 @@ export default function Home() {
 
                 <div className="flex bg-white p-6 rounded-[32px] items-center gap-4">
                   <Image
-                    src={require("./assets/house1.png")}
+                    src="/assets/house1.png"
                     className="rounded-full border-white border-[3px] object-cover w-14 h-14"
                     alt=""
+                    width={56}
+                    height={56}
+                    objectFit="cover"
                   />
 
                   <div className="flex flex-col">
@@ -163,8 +203,9 @@ export default function Home() {
 
                 <div className="flex bg-white p-6 rounded-[32px] items-center gap-4">
                   <Image
-                    src={require("./assets/user-4.png")}
+                    src="/assets/user-4.png"
                     width={56}
+                    height={56}
                     className="rounded-full border-white border-[3px]"
                     alt=""
                   />
@@ -271,48 +312,48 @@ export default function Home() {
               user_location={"Kim Giang, Hanoi"}
               house_price={"$ 35.000.000"}
               house_name={"Roselands House"}
-              house_image={require("./assets/house1.png")}
-              user_image={require("./assets/user-1.png")}
+              house_image={"/assets/house1.png"}
+              user_image={"/assets/user-1.png"}
             />
             <House
               user_name={"Sofia"}
               user_location={"Kim Giang, Hanoi"}
               house_price={"$ 35.000.000"}
               house_name={"Roselands House"}
-              house_image={require("./assets/house2.png")}
-              user_image={require("./assets/user-2.png")}
+              house_image={"/assets/house2.png"}
+              user_image={"/assets/user-2.png"}
             />
             <House
               user_name={"Sofia"}
               user_location={"Kim Giang, Hanoi"}
               house_price={"$ 35.000.000"}
               house_name={"Roselands House"}
-              house_image={require("./assets/house3.png")}
-              user_image={require("./assets/user-3.png")}
+              house_image={"/assets/house3.png"}
+              user_image={"/assets/user-3.png"}
             />
             <House
               user_name={"Sofia"}
               user_location={"Kim Giang, Hanoi"}
               house_price={"$ 35.000.000"}
               house_name={"Roselands House"}
-              house_image={require("./assets/houseimg.png")}
-              user_image={require("./assets/user-4.png")}
+              house_image={"/assets/house4.png"}
+              user_image={"/assets/user-4.png"}
             />
             <House
               user_name={"Sofia"}
               user_location={"Kim Giang, Hanoi"}
               house_price={"$ 35.000.000"}
               house_name={"Roselands House"}
-              house_image={require("./assets/house1.png")}
-              user_image={require("./assets/user-1.png")}
+              house_image={"/assets/house1.png"}
+              user_image={"/assets/user-1.png"}
             />
             <House
               user_name={"Sofia"}
               user_location={"Kim Giang, Hanoi"}
               house_price={"$ 35.000.000"}
               house_name={"Roselands House"}
-              house_image={require("./assets/house1.png")}
-              user_image={require("./assets/user-1.png")}
+              house_image={"/assets/house1.png"}
+              user_image={"/assets/user-1.png"}
             />
           </HouseList>
         </div>
@@ -384,9 +425,12 @@ export default function Home() {
             <div className="flex items-center justify-between">
               <div className="flex gap-6">
                 <Image
-                  src={require("./assets/user-3.png")}
+                  src="/assets/user-3.png"
                   alt=""
                   className="object-cover rounded-full w-14 h-14"
+                  objectFit="cover"
+                  width={56}
+                  height={56}
                 />
                 <div className="flex flex-col gap-1">
                   <b className="text-[#0E1735] text-lg leading-6">
@@ -412,32 +456,47 @@ export default function Home() {
           {/* Right */}
           <div className="flex relative w-[528px] h-[459px] z-20">
             <Image
-              src={require("./assets/house4.png")}
+              src="/assets/house4.png"
               alt=""
               className="object-cover w-[488px] h-[416px] rounded-lg absolute right-0"
+              objectFit="cover"
+              width={488}
+              height={416}
             />
             <div className="flex gap-3 absolute bottom-0 mr-3">
               <Image
-                src={require("./assets/chair1.png")}
+                src="/assets/chair1.png"
                 alt=""
                 className="w-[296px] h-[168px] rounded-md"
+                objectFit="cover"
+                width={296}
+                height={168}
               />
               <Image
-                src={require("./assets/decor1.png")}
+                src="/assets/decor1.png"
                 alt=""
                 className="w-24 h-20 self-end rounded-md"
+                objectFit="cover"
+                width={96}
+                height={80}
               />
               <Image
-                src={require("./assets/decor2.png")}
+                src="/assets/decor2.png"
                 alt=""
                 className="w-24 h-20 self-end rounded-md"
+                objectFit="cover"
+                width={96}
+                height={80}
               />
             </div>
           </div>
           <Image
-            src={require("./assets/colorblur2.png")}
+            src="/assets/colorblur2.png"
             alt=""
             className="absolute top-[1452px] -right-40 w-[553px] h-[560px] "
+            objectFit="cover"
+            width={553}
+            height={560}
           />
         </div>
 
@@ -490,9 +549,12 @@ export default function Home() {
         {/* Tips And Trick Section */}
         <div className="flex flex-col mx-32 ">
           <Image
-            src={require("./assets/colorblur3.png")}
+            src="/assets/colorblur3.png"
             alt=""
             className="absolute -z-10  -left-96 top-[2730px]"
+            objectFit="cover"
+            width={552}
+            height={695}
           />
           <div className="flex flex-col gap-6 items-center">
             <div className="flex flex-col items-center justify-center gap-2">
@@ -516,15 +578,21 @@ export default function Home() {
               <div className="flex gap-8 items-center">
                 <Image
                   alt=""
-                  src={require("./assets/house1.png")}
+                  src="/assets/house1.png"
                   className="rounded-2xl w-[200px] h-[144px]"
+                  width={200}
+                  height={144}
+                  objectFit="cover"
                 />
                 <div className="flex flex-col gap-4 w-[340px]">
                   <div className="flex items-center gap-4">
                     <Image
-                      src={require("./assets/user-1.png")}
+                      src="/assets/user-1.png"
                       alt=""
                       className="w-8 h-8 object-cover rounded-full"
+                      width={32}
+                      height={32}
+                      objectFit="cover"
                     />
                     <span className="text-[#3C4563] text-sm leading-[22px]">
                       Dianne Russell
@@ -550,15 +618,21 @@ export default function Home() {
               <div className="flex gap-8 items-center">
                 <Image
                   alt=""
-                  src={require("./assets/house2.png")}
+                  src="/assets/house2.png"
                   className="rounded-2xl w-[200px] h-[144px]"
+                  width={200}
+                  height={144}
+                  objectFit="cover"
                 />
                 <div className="flex flex-col gap-4 w-[340px]">
                   <div className="flex items-center gap-4">
                     <Image
-                      src={require("./assets/user-2.png")}
+                      src="/assets/user-2.png"
                       alt=""
                       className="w-8 h-8 object-cover rounded-full"
+                      objectFit="cover"
+                      width={32}
+                      height={32}
                     />
                     <span className="text-[#3C4563] text-sm leading-[22px]">
                       Courtney Henry
@@ -585,15 +659,21 @@ export default function Home() {
               <div className="flex gap-8 items-center">
                 <Image
                   alt=""
-                  src={require("./assets/house3.png")}
+                  src="/assets/house3.png"
                   className="rounded-2xl w-[200px] h-[144px]"
+                  objectFit="cover"
+                  width={200}
+                  height={144}
                 />
                 <div className="flex flex-col gap-4 w-[340px]">
                   <div className="flex items-center gap-4">
                     <Image
-                      src={require("./assets/user-3.png")}
+                      src="/assets/user-3.png"
                       alt=""
                       className="w-8 h-8 object-cover rounded-full"
+                      objectFit="cover"
+                      width={32}
+                      height={32}
                     />
                     <span className="text-[#3C4563] text-sm leading-[22px]">
                       Darlene Robertson
@@ -620,15 +700,21 @@ export default function Home() {
             <div className="flex gap-8 items-center flex-col w-[560px]">
               <Image
                 alt=""
-                src={require("./assets/house1.png")}
+                src="/assets/house1.png"
                 className="rounded-2xl w-[560px] h-[280px] object-cover"
+                objectFit="cover"
+                width={560}
+                height={280}
               />
               <div className="flex flex-col gap-4">
                 <div className="flex items-center gap-4">
                   <Image
-                    src={require("./assets/user-3.png")}
+                    src="/assets/user-3.png"
                     alt=""
                     className="w-8 h-8 object-cover rounded-full"
+                    objectFit="cover"
+                    width={32}
+                    height={32}
                   />
                   <span className="text-[#3C4563] text-sm leading-[22px]">
                     Darlene Robertson
@@ -661,9 +747,12 @@ export default function Home() {
         {/* Subscribe Section */}
         <div className="flex items-center mx-32 relative">
           <Image
-            src={require("./assets/Group 14.png")}
+            src="/assets/Group 14.png"
             alt=""
-            className="h-80 rounded-[32px]"
+            className="h-80 rounded-[32px] min-w-full"
+            width={1200}
+            height={320}
+            objectFit="cover"
           />
           <div className="flex flex-col gap-8 absolute items-center w-full">
             <b className="text-[32px] leading-10 text-center">
@@ -694,26 +783,41 @@ export default function Home() {
         <footer className="flex mx-32 justify-between mb-32">
           {/* Bio */}
           <div className="flex flex-col w-80 gap-4">
-            <Image src={require("./assets/Logo.png")} alt="" />
+            <Image
+              src="/assets/Logo.png"
+              alt=""
+              objectFit="cover"
+              width={115}
+              height={36}
+            />
             <small className="text-[#626687] opacity-75">
               We provide information about properties such as houses, villas and
               apartments to help people find their dream home
             </small>
             <div className="flex items-center gap-6">
               <Image
-                src={require("./assets/Facebook.png")}
+                src="/assets/Facebook.png"
                 alt=""
                 className="cursor-pointer"
+                objectFit="cover"
+                width={32}
+                height={32}
               />
               <Image
-                src={require("./assets/Twitter.png")}
+                src="/assets/Twitter.png"
                 alt=""
                 className="cursor-pointer"
+                objectFit="cover"
+                width={32}
+                height={32}
               />
               <Image
-                src={require("./assets/Instagram.png")}
+                src="/assets/Instagram.png"
                 alt=""
                 className="cursor-pointer"
+                objectFit="cover"
+                width={32}
+                height={32}
               />
             </div>
           </div>
@@ -771,9 +875,12 @@ export default function Home() {
             </div>
           </div>
           <Image
-            src={require("./assets/colorblur3.png")}
+            src="/assets/colorblur3.png"
             alt=""
             className="absolute  -right-60 bottom-0 rotate-90  top-[4100px] -z-10"
+            objectFit="cover"
+            width={438}
+            height={494}
           />
         </footer>
       </div>

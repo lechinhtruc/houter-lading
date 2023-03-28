@@ -8,9 +8,12 @@ export default function HouseReview({ classname }) {
       className={`flex justify-center h-[505px] relative w-[740px] ${classname}`}
     >
       <Image
-        src={require("../../assets/house-review1.png")}
+        src="/assets/house-review1.png"
         alt=""
         className="object-cover w-[740px] h-[400px] z-10"
+        width={740}
+        height={400}
+        objectFit="cover"
       />
       <div className="flex flex-col gap-6 bg-white p-8 absolute w-[612px] rounded-2xl z-20 bottom-0">
         <div className="flex flex-col gap-6">
@@ -25,9 +28,12 @@ export default function HouseReview({ classname }) {
           <div className="flex justify-between">
             <div className="flex gap-6 items-center">
               <Image
-                src={require("../../assets/user-1.png")}
+                src="/assets/user-1.png"
                 alt=""
                 className="w-10 h-10 object-cover rounded-full"
+                width={40}
+                height={40}
+                objectFit="cover"
               />
               <div className="flex flex-col gap-1 items-center">
                 <b className="text-[#0E1735]">Dianne Russell</b>

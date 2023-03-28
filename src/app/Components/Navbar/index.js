@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Navbar() {
   return (
     <div className="flex justify-between items-center mt-10 mx-32">
-      <Image src={require("../../assets/Logo.png")} alt="logo" />
+      <Image src="/assets/Logo.png" alt="logo" width={115} height={36}/>
       <div className="flex gap-6 items-center justify-center">
         <Link
           href="/"

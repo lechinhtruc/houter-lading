@@ -13,7 +13,14 @@ export default function House({
   return (
     <div className="flex flex-col gap-6 w-[340px]">
       <div className="flex relative h-[382px]">
-        <Image src={house_image} alt="" className="rounded-3xl" />
+        <Image
+          src={house_image}
+          alt=""
+          className="rounded-3xl"
+          width={340}
+          height={382}
+          objectFit="cover"
+        />
         <div className="bg-[#FEE2E2] rounded-[32px] px-4 py-2 gap-[10px] text-[#EF4444] absolute flex bottom-0 items-center m-4 font-semibold">
           <FontAwesomeIcon
             icon={faFire}
