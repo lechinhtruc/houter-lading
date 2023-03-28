@@ -796,7 +796,7 @@ export default function Home() {
             </small>
             <div className="flex items-center gap-6">
               <Image
-                src="/assets/Facebook.png"
+                src="/assets/facebook.png"
                 alt=""
                 className="cursor-pointer"
                 objectFit="cover"
@@ -804,7 +804,7 @@ export default function Home() {
                 height={32}
               />
               <Image
-                src="/assets/Twitter.png"
+                src="/assets/twitter.png"
                 alt=""
                 className="cursor-pointer"
                 objectFit="cover"
@@ -812,7 +812,7 @@ export default function Home() {
                 height={32}
               />
               <Image
-                src="/assets/Instagram.png"
+                src="/assets/instagram.png"
                 alt=""
                 className="cursor-pointer"
                 objectFit="cover"
